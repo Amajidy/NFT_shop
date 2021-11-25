@@ -189,10 +189,10 @@
             </div>
           </div>
           <ul class="text-center text-white text-3xl mt-10 flex flex-col gap-10">
-            <li class="capitalize"><button class="capitalize" @click="draweberLink('/')">home</button></li>
-            <li class="capitalize"><button class="capitalize" @click="draweberLink('/nft')">NFT Shop</button></li>
-            <li class="capitalize"><button class="capitalize" @click="draweberLink('/about')">About</button></li>
-            <li class="capitalize"><button class="capitalize" @click="draweberLink('/contact')">Contact Up</button></li>
+            <li class="capitalize"><button @click="draweberLink('/')">Home</button></li>
+            <li class="capitalize"><button @click="draweberLink('/nft')">NFT Shop</button></li>
+            <li class="capitalize"><button @click="draweberLink('/about')">About</button></li>
+            <li class="capitalize"><button @click="draweberLink('/contact')">Contact Up</button></li>
           </ul>
           <h4 class="text-white text-3xl capitalize text-center" style="margin: auto 0 60px 0;">logo name</h4>
         </div>
