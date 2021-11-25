@@ -190,7 +190,7 @@
             </div>
           </div>
           <ul class="text-center text-white text-3xl mt-10 flex flex-col gap-10">
-            <li class="capitalize"><button @click="draweberLink('/')">home</button></li>
+            <li class="capitalize"><button @click="draweberLink('/')">Home</button></li>
             <li class="capitalize"><button @click="draweberLink('/nft')">NFT Shop</button></li>
             <li class="capitalize"><button @click="draweberLink('/about')">About</button></li>
             <li class="capitalize"><button @click="draweberLink('/contact')">Contact Up</button></li>
