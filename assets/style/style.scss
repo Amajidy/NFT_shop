@@ -10,6 +10,11 @@
         @apply bg-cover bg-no-repeat w-full;
     }
 }
+@media screen and (min-width:1600px) {
+  .bg-header-background {
+      height: 115vh;
+  }
+}
 @media screen and (max-width:1024px){
     .bg-header-color{
       background-image: url(~/assets/img/header/headerBackground.svg);
@@ -28,6 +33,9 @@ background: linear-gradient(268.8deg, #7603eb 30%, #d923fc 95%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 font-size: 12rem;
+@media screen and (max-width:545px) {
+  font-size: 9rem;
+}
 }
 .bg-gray{
     background-color: #F3F3F3;

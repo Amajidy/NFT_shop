@@ -9,12 +9,6 @@
 
       <div class="md:col-span-2 pb-14 hidden md:block">
         <div class="gap-5 mt-3 text-white md:flex md:flex-col" v-if="!show">
-          <div class="flex justify-center gap-12 lg:gap-24">
-            <a href="/" class="text-center header__text">home</a>
-            <a href="" class="text-center header__text">nft shop</a>
-            <a href="" class="text-center header__text">about</a>
-            <a href="" class="text-center header__text">contact us</a>
-          </div>
           <div class="flex relative">
             <input
               type="text"
@@ -39,6 +33,12 @@
                 />
               </svg>
             </div>
+          </div>
+          <div class="flex justify-center gap-12 lg:gap-24">
+            <a href="/" class="text-center header__text">home</a>
+            <a href="" class="text-center header__text">nft shop</a>
+            <a href="" class="text-center header__text">about</a>
+            <a href="" class="text-center header__text">contact us</a>
           </div>
         </div>
       </div>

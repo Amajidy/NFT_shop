@@ -63,7 +63,7 @@
         <div class="lg:col-span-2 order-1">
           <div class="flex flex-col">
             <img
-              class="w-9/12 lg:w-8/12 lg:ml-auto mx-auto lg:mx-0"
+              class="lg:w-8/12 lg:ml-auto mx-auto lg:mx-0"
               src="~/assets/img/header/nftLogo.svg"
               alt=""
             />
@@ -100,15 +100,15 @@
     <div class="bg-gradient-to-t from-gray-300 py-10 sm:py-20">
       <div class="container mx-auto flex justify-between">
         <div
-          class="hidden sm:flex flex-col items-center group cursor-pointer"
+          class="hidden sm:flex flex-col items-center group cursor-pointer header__action"
           v-for="(item, index) in headerAction"
           :key="index"
         >
           <img
-            class="transform hover:scale-125 transition duration-300"
+            class="transform transition duration-300 w-max"
             :src="require(`~/assets/img/header/${item.icon}`)"
-            alt=""
-            srcset=""
+            alt="..."
+
           />
           <span
             class="
@@ -116,7 +116,6 @@
               font-bold
               mt-1
               text-gray-600
-              group-hover:text-indigo-600
             "
             v-html="item.name"
           >
@@ -300,5 +299,19 @@ text-shadow: 0px 0px 15px #fff;
 }
 .swiper-pagination-bullets{
   bottom: 0 !important;
+}
+.header__action{
+  transition: all 0.3s;
+  &:hover{
+    img{
+      transform: scale(1.5);
+      transition: all 0.3s;
+    }
+    span{
+      transform: translateY(10px);
+      color: #021E72;
+      transition: all 0.3s;
+    }
+  }
 }
 </style>
