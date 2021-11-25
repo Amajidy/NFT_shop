@@ -6,10 +6,10 @@
         <div class="text-white text-3xl">logo page</div>
         <div class="gap-5 text-white hidden xl:flex">
           <div class="text-white">
-            <a href="/" class="mx-16 header__text">home</a>
-            <a href="" class="mx-16 header__text">nft shop</a>
-            <a href="" class="mx-16 header__text">about</a>
-            <a href="" class="mx-16 header__text">contact us</a>
+            <a href="/" class="mx-16 header__text capitalize">home</a>
+            <a href="" class="mx-16 header__text capitalize">nft shop</a>
+            <a href="" class="mx-16 header__text capitalize">about</a>
+            <a href="" class="mx-16 header__text capitalize">contact us</a>
           </div>
           <div class="flex">
             <nuxt-link to="#" class="cursor-default">
@@ -190,10 +190,10 @@
             </div>
           </div>
           <ul class="text-center text-white text-3xl mt-10 flex flex-col gap-10">
-            <li class="capitalize"><button @click="draweberLink('/')">home</button></li>
-            <li class="capitalize"><button @click="draweberLink('/nft')">NFT Shop</button></li>
-            <li class="capitalize"><button @click="draweberLink('/about')">About</button></li>
-            <li class="capitalize"><button @click="draweberLink('/contact')">Contact Up</button></li>
+            <li class="capitalize"><button class="capitalize" @click="draweberLink('/')">home</button></li>
+            <li class="capitalize"><button class="capitalize" @click="draweberLink('/nft')">NFT Shop</button></li>
+            <li class="capitalize"><button class="capitalize" @click="draweberLink('/about')">About</button></li>
+            <li class="capitalize"><button class="capitalize" @click="draweberLink('/contact')">Contact Up</button></li>
           </ul>
           <h4 class="text-white text-3xl capitalize text-center" style="margin: auto 0 60px 0;">logo name</h4>
         </div>
@@ -292,6 +292,7 @@ export default {
   width: 100%;
 }
 .header__text{
+  text-transform: capitalize;
   transition: all 0.3s ease-in-out;
   &:hover{
 text-shadow: 0px 0px 15px #fff;
