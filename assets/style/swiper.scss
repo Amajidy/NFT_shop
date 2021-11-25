@@ -1,0 +1,133 @@
+// services slider
+.services-slider {
+  position: relative;
+  margin-top: 3rem;
+  width: 100%;
+  //overflow: hidden;
+
+  .services-slider__item {
+    background: #00B4AB;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    font-family: 'iransans-bold';
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px 0;
+    cursor: pointer;
+  }
+
+
+  @media (max-width: 1279px) {
+    .swiper-button-next {
+      right: -10px !important;
+    }
+
+    .swiper-button-prev {
+      left: -10px !important;
+    }
+  }
+  @media (min-width: 1024px) {
+    .swiper-button-next {
+      right: 0 !important;
+    }
+
+    .swiper-button-prev {
+      left: 0!important;
+    }
+  }
+  @media (min-width: 1380px) {
+    .swiper-button-next {
+      right: -40px !important;
+    }
+
+    .swiper-button-prev {
+      left: -40px !important;
+    }
+  }
+  @media (min-width: 1535px) {
+    .swiper-button-next {
+      right: 0 !important;
+    }
+
+    .swiper-button-prev {
+      left: 0 !important;
+    }
+  }
+  @media (min-width: 1635px) {
+    .swiper-button-next {
+      right: -40px !important;
+    }
+
+    .swiper-button-prev {
+      left: -30px !important;
+    }
+  }
+  @media (min-width: 1653px) {
+    .swiper-button-next {
+      right: -45px !important;
+    }
+
+    .swiper-button-prev {
+      left: -35px !important;
+    }
+  }
+  @media (min-width: 1672px) {
+    .swiper-button-next {
+      right: -60px !important;
+    }
+
+    .swiper-button-prev {
+      left: -50px !important;
+    }
+  }
+
+    @media (max-width: 992px) {
+      .swiper-button-next, .swiper-button-prev {
+        display: none;
+      }
+    @media (max-width: 575px) {
+      margin-top: -11rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .swiper-button-next {
+    position: absolute;
+    // right: -7rem;
+    background-image: url('~assets/img/swiper-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 25% auto;
+    background-position: center;
+
+    background-color: #FBFAFA;
+    box-shadow: 0px 0px 6px 3px rgba(145, 145, 145, 0.25);
+    border-radius: 10px;
+    padding: 2rem 1.2rem;
+    transform: rotate(180deg);
+  }
+
+  .swiper-button-next::after {
+    display: none;
+  }
+
+  .swiper-button-prev {
+    position: absolute;
+    // left: -7rem;
+    background-image: url('~assets/img/swiper-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 25% auto;
+    background-position: center;
+    background-color: #FBFAFA;
+    box-shadow: 0px 0px 6px 3px rgba(145, 145, 145, 0.25);
+    border-radius: 10px;
+    padding: 2rem 1.2rem;
+  }
+
+  .swiper-button-prev::after {
+    display: none;
+  }
+
+}
