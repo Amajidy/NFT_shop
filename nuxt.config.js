@@ -1,8 +1,6 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
-  server:{
-    host:'192.168.10.215' ,
-    port: 3000},
+  // server:{host:'192.168.10.250', port: 3000},
 
   head: {
     title: 'nft-shop',

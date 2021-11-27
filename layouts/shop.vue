@@ -1,7 +1,7 @@
 <template>
   <div>
     <shop-header/>
-    <nuxt class="md:pt-40 pt-10"/>
+    <nuxt class="md:pt-48 pt-10"/>
     <footer-layout/>
   </div>
 </template>

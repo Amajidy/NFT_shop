@@ -52,6 +52,7 @@
             <div class="mx-auto mt-10">
               <button
                 class="text-white font-medium rounded-2xl py-2.5 px-12 btn-nft transition-400 transition-all transition-ease-in-out"
+                @click="$router.push('/createNFT')"
               >
                 Create NFT
               </button>
