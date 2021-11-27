@@ -8,7 +8,7 @@
           <div class="text-white">
             <a href="/" class="mx-16 header__text capitalize">home</a>
             <a href="" class="mx-16 header__text capitalize">nft shop</a>
-            <a href="" class="mx-16 header__text capitalize">about</a>
+            <nuxt-link to="/about" class="mx-16 header__text capitalize">about</nuxt-link>
             <a href="" class="mx-16 header__text capitalize">contact us</a>
           </div>
           <div class="flex">
