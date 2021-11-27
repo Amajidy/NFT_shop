@@ -3,7 +3,7 @@
     <div class="bg-header-background bg-header-color pb-8 lg:pb-0">
       <!-- navbar -->
       <div class="flex justify-between items-center p-6">
-        <div class="text-white text-3xl">logo page</div>
+        <div class=" md:mx-20"><nuxt-link to="/"><img src="~/assets/img/header/logo.png" alt=""></nuxt-link></div>
         <div class="gap-5 text-white hidden xl:flex">
           <div class="text-white">
             <a href="/" class="mx-16 header__text capitalize">home</a>
@@ -64,7 +64,7 @@
         <div class="lg:col-span-2 order-1">
           <div class="flex flex-col">
             <img
-              class="lg:w-8/12 lg:ml-auto mx-auto lg:mx-0"
+              class="lg:w-8/12 lg:ml-auto mx-auto lg:mx-0 pl-5 lg:pl-0"
               src="~/assets/img/header/nftLogo.svg"
               alt=""
             />

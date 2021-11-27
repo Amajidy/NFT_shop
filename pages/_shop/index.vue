@@ -169,28 +169,6 @@ export default {
 </script>
 
 <style lang="scss">
-.shop-background {
-  background-color: #e6e3e3;
-}
-.shop--details {
-  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
-}
-.title--shop {
-  color: #1d1355;
-}
-.priceUSDT--shop {
-  color: #c91efa;
-}
-.submit--shop {
-  background: #c91efa;
-  transition: all 0.3s ease-in-out;
-  &:hover{
-    transform: translateY(-5px);
-        box-shadow: 5px 8px 11px rgb(0 0 0 / 34%);
-  }
-}
-.shop--img{
-  box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.1);
-}
+
 
 </style>
