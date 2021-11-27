@@ -3,7 +3,7 @@ export default {
   // server:{host:'192.168.10.250', port: 3000},
 
   head: {
-    title: 'nft-shop',
+    title: 'NFT_shop',
     htmlAttrs: {
       lang: 'en'
 

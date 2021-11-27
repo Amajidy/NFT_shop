@@ -1,5 +1,5 @@
 {
-  "name": "nft-shop",
+  "name": "NFT_shop",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -12,14 +12,14 @@
     "@nuxtjs/axios": "^5.13.6",
     "core-js": "^3.15.1",
     "nuxt": "^2.15.7",
-    "swiper": "^5.4.1",
+    "swiper": "^5.4.5",
     "vue-awesome-swiper": "^4.1.1"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^4.2.0",
     "fibers": "^5.0.0",
     "postcss": "^8.3.5",
-    "sass": "^1.43.4",
+    "sass": "^1.43.5",
     "sass-loader": "^10.2.0"
   }
 }

@@ -102,6 +102,7 @@
 </template>
 
 <script>
+import 'swiper/css/swiper.css'
 export default {
   layout: "shop",
   data() {
