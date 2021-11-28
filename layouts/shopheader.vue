@@ -4,7 +4,9 @@
       <div
         class=" text-3xl flex md:items-center md:justify-center col-span-2 md:col-span-1 ml-1 md:ml-0"
       >
-        logo page
+        <figure>
+          <img src="~/assets/img/header/logo.png" alt="">
+        </figure>
       </div>
 
       <div class="md:col-span-2 pb-14 hidden md:block">

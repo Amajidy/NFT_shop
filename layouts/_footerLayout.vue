@@ -4,7 +4,11 @@
         <div class="text-white py-36 px-3 md:px-0 bg-footer-background">
           <div class="container mx-auto">
             <div class="flex flex-col lg:flex-row ">
-              <div class="flex-1 text-3xl md:mb-5 lg:mb-0">logo name</div>
+              <div class="flex-1 text-3xl md:mb-5 lg:mb-0">
+                <figure>
+                  <img src="~/assets/img/header/logo.png" alt="">
+                </figure>
+              </div>
               <div class="flex flex-wrap md:flex-row gap-y-9 gap-x-16 sm:gap-16 md:gap-20 lg:gap-24 mt-8 md:mt-0">
                 <div class="capitalize md:mr-0" v-for="(item, index) in footer" :key="index">
                   <h3 class="text-2xl font-normal">{{ item.header }}</h3>
@@ -27,6 +31,7 @@ name:'footerLayout',
     footer:[
       {
         header: "About us",
+
         item: [
           "About NFT Shop",
           " Community",
