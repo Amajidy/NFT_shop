@@ -101,7 +101,6 @@ display: flex;
   }
   .about__bottom{
     margin-bottom: 5rem !important;
-padding: 0 30px;
   }
 }
 
@@ -118,7 +117,9 @@ padding: 0 30px;
       width: 100%;
       margin-top: 4rem;
     }
-
+  }
+  .about__bottom{
+    padding: 0 30px;
   }
 }
 

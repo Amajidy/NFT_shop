@@ -4,8 +4,8 @@
         <div class="text-white py-36 px-3 md:px-0 bg-footer-background">
           <div class="container mx-auto">
             <div class="flex flex-col lg:flex-row ">
-              <div class="flex-1 text-3xl md:mb-5 lg:mb-0">
-                <figure>
+              <div class="flex-1 text-3xl md:mb-5 lg:mb-0 ">
+                <figure class="logo">
                   <img src="~/assets/img/header/logo.png" alt="">
                 </figure>
               </div>
@@ -78,5 +78,11 @@ name:'footerLayout',
   &:hover{
     text-shadow: 0px 0px 15px #fff;
   }
+}
+@media (max-width: 575px) {
+.logo{
+  display: flex;
+  justify-content: center;
+}
 }
 </style>

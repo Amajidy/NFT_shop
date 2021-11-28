@@ -195,7 +195,11 @@
             <li class="capitalize"><button @click="draweberLink('/about')">About</button></li>
             <li class="capitalize"><button @click="draweberLink('/contact')">Contact Up</button></li>
           </ul>
-          <h4 class="text-white text-3xl capitalize text-center" style="margin: auto 0 60px 0;">logo name</h4>
+          <div class="text-white text-3xl capitalize text-center flex justify-center " style="margin: auto 0 60px 0;">
+            <figure>
+              <img src="~/assets/img/header/logo.png" alt="">
+            </figure>
+          </div>
         </div>
       </div>
     </transition>
