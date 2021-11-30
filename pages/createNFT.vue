@@ -88,8 +88,29 @@
         </div>
       </div>
       <div class="flex flex-row ml-3">
-
       </div>
+   <div class="group">
+     <div class="icon">
+       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path d="M19.6875 0C8.81543 0 0 8.81543 0 19.6875C0 30.5596 8.81543 39.375 19.6875 39.375C30.5596 39.375 39.375 30.5596 39.375 19.6875C39.375 8.81543 30.5596 0 19.6875 0ZM28.125 20.7422C28.125 20.9355 27.9668 21.0938 27.7734 21.0938H21.0938V27.7734C21.0938 27.9668 20.9355 28.125 20.7422 28.125H18.6328C18.4395 28.125 18.2812 27.9668 18.2812 27.7734V21.0938H11.6016C11.4082 21.0938 11.25 20.9355 11.25 20.7422V18.6328C11.25 18.4395 11.4082 18.2812 11.6016 18.2812H18.2812V11.6016C18.2812 11.4082 18.4395 11.25 18.6328 11.25H20.7422C20.9355 11.25 21.0938 11.4082 21.0938 11.6016V18.2812H27.7734C27.9668 18.2812 28.125 18.4395 28.125 18.6328V20.7422Z" fill="#C91EFA"/>
+       </svg>
+
+     </div>
+<div class="input-middle">
+  <div class="flex mt-8 middle__child">
+    <span class="bg-gray-300 px-8 rounded-l-xl text-input ">Manufacturer Group</span>
+    <input type="text" class="border -ml-2 flex-1 outline-none rounded-xl input-insert"
+           placeholder="Email Your way of communicating with us, enter your email">
+  </div>
+</div>
+<div class="input-last">
+  <div class="flex w-8/12 mt-8">
+    <span class="bg-gray-300 px-8 rounded-l-xl text-input ">Responsibility</span>
+    <input type="text" class="border -ml-2 flex-1 outline-none rounded-xl input-insert"
+           placeholder="">
+  </div>
+</div>
+   </div>
       <div class="flex flex-row w-full">
           <div class="social w-full">
             <div class="flex flex-row flex justify-evenly w-full social__items">
@@ -294,9 +315,9 @@ input, textarea {
   margin-top: 3rem;
 }
 
-.add-plus {
-  margin-left: 17px;
-  margin-top: 2px;
+.icon {
+  margin-top: 2rem;
+  margin-left: 2rem;
   @media (max-width: 575px) {
     margin-left: 0;
   }
@@ -325,20 +346,35 @@ input, textarea {
   box-shadow: 0px 0px 15px #C91EFA !important;
 }
 }
+.group{
+  display: flex;
+}
+.input-middle{
+  .middle__child{
+    width: 63rem;
+    @media (max-width: 1271px) {
+      width: 66%;
+    }
+  }
+}
 @media (max-width: 575px) {
   .social__items{
     flex-direction: column;
     .items__box{
       margin: 1rem 0;
+      margin: 1rem 0;
+      align-self: stretch;
     }
   }
   .textarea-parent{
     width: 100%;
   }
+
   .textarea-text{
       padding: 12px 2rem;
 overscroll-behavior-y: none;
   }
+
 }
 @media (max-width: 1271px) {
   .social__items{
@@ -347,6 +383,12 @@ overscroll-behavior-y: none;
       margin: 1rem 0;
       align-self: center;
     }
+  }
+
+}
+@media (max-width: 1538px) {
+  .group{
+    flex-direction: column;
   }
 }
 </style>
