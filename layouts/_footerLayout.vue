@@ -6,7 +6,7 @@
             <div class="flex flex-col lg:flex-row ">
               <div class="flex-1 text-3xl md:mb-5 lg:mb-0 ">
                 <figure class="logo">
-                  <img src="~/assets/img/header/logo.png" alt="">
+                  <img src="~/assets/img/header/logo.png" alt="" style="filter: contrast(2);">
                 </figure>
               </div>
               <div class="flex flex-wrap md:flex-row gap-y-9 gap-x-16 sm:gap-16 md:gap-20 lg:gap-24 mt-8 md:mt-0">
