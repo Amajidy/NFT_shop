@@ -88,30 +88,12 @@
         </div>
       </div>
       <div class="flex flex-row ml-3">
-        <div class="flex w-8/12 mt-12">
-          <div class="add-plus">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M19.6875 0C8.81543 0 0 8.81543 0 19.6875C0 30.5596 8.81543 39.375 19.6875 39.375C30.5596 39.375 39.375 30.5596 39.375 19.6875C39.375 8.81543 30.5596 0 19.6875 0ZM28.125 20.7422C28.125 20.9355 27.9668 21.0938 27.7734 21.0938H21.0938V27.7734C21.0938 27.9668 20.9355 28.125 20.7422 28.125H18.6328C18.4395 28.125 18.2812 27.9668 18.2812 27.7734V21.0938H11.6016C11.4082 21.0938 11.25 20.9355 11.25 20.7422V18.6328C11.25 18.4395 11.4082 18.2812 11.6016 18.2812H18.2812V11.6016C18.2812 11.4082 18.4395 11.25 18.6328 11.25H20.7422C20.9355 11.25 21.0938 11.4082 21.0938 11.6016V18.2812H27.7734C27.9668 18.2812 28.125 18.4395 28.125 18.6328V20.7422Z"
-                fill="#C91EFA"/>
-            </svg>
 
-          </div>
-          <span class="bg-gray-300 px-8 rounded-l-xl text-input">Manufacturer Group</span>
-          <input type="email" class="border -ml-2 flex-1 outline-none rounded-xl input-insert"
-                 placeholder="Email Your way of communicating with us, enter your email">
-        </div>
-        <div>
-          <div class="flex right-manufactorer">
-            <span class="bg-gray-300 px-8 rounded-l-xl text-input">Responsibility</span>
-            <input type="text" class="border -ml-2 flex-1 outline-none rounded-xl input-insert" placeholder="">
-          </div>
-        </div>
       </div>
       <div class="flex flex-row w-full">
           <div class="social w-full">
-            <div class="flex flex-row flex justify-evenly w-full">
-              <div class="flex ">
+            <div class="flex flex-row flex justify-evenly w-full social__items">
+              <div class="flex items__box">
           <span class="bg-gray-300 px-8 rounded-l-xl text-input Linkedin">
             <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path
@@ -137,7 +119,7 @@
                 <input type="text" class="border -ml-2 flex-1 outline-none rounded-xl input-insert social-address"
                        placeholder="LinkdeIn" readonly>
               </div>
-              <div class="flex ">
+              <div class="flex items__box">
           <span class="bg-gray-300 px-8 rounded-l-xl text-input whtasapp">
          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_1016_346)">
@@ -163,7 +145,7 @@
                 <input type="text" class="border -ml-2 flex-1 outline-none rounded-xl input-insert social-address"
                        placeholder="Whatsapp" readonly>
               </div>
-              <div class="flex ">
+              <div class="flex items__box">
           <span class="bg-gray-300 px-8 rounded-l-xl text-input Twitter">
             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_1016_341)">
@@ -189,7 +171,7 @@
                 <input type="text" class="border -ml-2 flex-1 outline-none rounded-xl input-insert social-address"
                        placeholder="Twitter " readonly>
               </div>
-              <div class="flex ">
+              <div class="flex items__box">
           <span class="bg-gray-300 px-8 rounded-l-xl text-input insta">
         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <rect width="25" height="25" fill="url(#pattern0)"/>
@@ -274,6 +256,9 @@ export default {
   margin-left: 1rem;
   margin-right: -1rem;
     color: #1D1355;
+@media (max-width: 575px) {
+  margin-left: 0;
+}
 }
 
 .margin__middle {
@@ -312,6 +297,9 @@ input, textarea {
 .add-plus {
   margin-left: 17px;
   margin-top: 2px;
+  @media (max-width: 575px) {
+    margin-left: 0;
+  }
 }
 
 .social-address {
@@ -337,5 +325,28 @@ input, textarea {
   box-shadow: 0px 0px 15px #C91EFA !important;
 }
 }
-
+@media (max-width: 575px) {
+  .social__items{
+    flex-direction: column;
+    .items__box{
+      margin: 1rem 0;
+    }
+  }
+  .textarea-parent{
+    width: 100%;
+  }
+  .textarea-text{
+      padding: 12px 2rem;
+overscroll-behavior-y: none;
+  }
+}
+@media (max-width: 1271px) {
+  .social__items{
+    flex-direction: column;
+    .items__box{
+      margin: 1rem 0;
+      align-self: center;
+    }
+  }
+}
 </style>
